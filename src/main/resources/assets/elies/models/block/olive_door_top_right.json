@@ -1,0 +1,9 @@
+{
+  "parent": "elies:block/door_top_right",
+  "textures": {
+    "bottom": "elies:block/olive_door_bottom",
+    "top": "elies:block/olive_door_top"
+  }
+}
+
+

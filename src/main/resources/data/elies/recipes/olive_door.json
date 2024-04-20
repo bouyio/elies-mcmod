@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "elies:olive_planks"
+    }
+  },
+  "result": {
+    "item": "elies:olive_door",
+    "count": 6
+  }
+}
+
+
+

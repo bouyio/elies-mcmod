@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north,half=lower,powered=false": { "model": "elies:block/press", "y": 180, "uvlock": true },
+    "facing=east,half=lower,powered=false":  { "model": "elies:block/press", "y": 270, "uvlock": true },
+    "facing=south,half=lower,powered=false": { "model": "elies:block/press",  "uvlock": true },
+    "facing=west,half=lower,powered=false":  { "model": "elies:block/press", "y": 90, "uvlock": true },
+    "half=upper": {"model": "elies:block/nothing"},
+    "facing=north,half=lower,powered=true": { "model": "elies:block/press_powered", "y": 180, "uvlock": true },
+    "facing=east,half=lower,powered=true":  { "model": "elies:block/press_powered", "y": 270, "uvlock": true },
+    "facing=south,half=lower,powered=true": { "model": "elies:block/press_powered",  "uvlock": true },
+    "facing=west,half=lower,powered=true":  { "model": "elies:block/press_powered", "y": 90, "uvlock": true }
+  }
+}
+
+
+

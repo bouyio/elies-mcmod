@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "elies:block/olive_planks",
+    "side": "elies:block/olive_planks",
+    "top": "elies:block/olive_planks"
+  }
+}

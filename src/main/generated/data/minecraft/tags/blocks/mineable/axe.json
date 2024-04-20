@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "elies:olive_press",
+    "elies:empty_press",
+    "elies:olive_oil_press",
+    "elies:olive_log",
+    "elies:olive_planks",
+    "elies:olive_slab",
+    "elies:olive_stairs",
+    "elies:stripped_olive_log",
+    "elies:olive_wood",
+    "elies:stripped_olive_wood",
+    "elies:olive_door",
+    "elies:olive_trapdoor",
+    "elies:olive_fence",
+    "elies:olive_fence_gate",
+    "elies:olive_button",
+    "elies:olive_pressure_plate",
+    "elies:olive_oil_press",
+    "elies:olive_press",
+    "elies:empty_press"
+  ]
+}

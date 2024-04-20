@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "elies:block/olive_log_top",
+    "side": "elies:block/olive_log"
+  }
+}

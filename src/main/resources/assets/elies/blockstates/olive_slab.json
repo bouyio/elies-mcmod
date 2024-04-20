@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elies:block/olive_slab"
+    },
+    "type=double": {
+      "model": "elies:block/olive_planks"
+    },
+    "type=top": {
+      "model": "elies:block/olive_slab_top"
+    }
+  }
+}

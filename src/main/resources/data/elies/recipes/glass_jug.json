@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "K K",
+    "S S",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:glass_pane"
+    },
+    "K": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "elies:glass_jug",
+    "count": 4
+  }
+}
+
+
+
