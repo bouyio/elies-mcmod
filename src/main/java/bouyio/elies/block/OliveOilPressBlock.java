@@ -22,10 +22,11 @@ public class OliveOilPressBlock extends AbstractPressBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack = player.getMainHandStack();
         if(itemStack.isOf(EliesItems.glass_jug)){
+            itemStack.decrement(1);
+            player.getInventory().insertStack(new ItemStack(EliesItems.olive_oil_jug));
+            world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+            world.emitGameEvent(player, GameEvent.FLUID_PICKUP, pos);
             if(decreaseContentLevel(world,pos,state)) {
-                world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
-                world.emitGameEvent(player, GameEvent.FLUID_PICKUP, pos);
-                ItemUsage.exchangeStack(itemStack, player, new ItemStack(EliesItems.olive_oil_jug));
 
             }
             if(state.get(CONTENTLEVEL) == 1){
@@ -39,10 +40,9 @@ public class OliveOilPressBlock extends AbstractPressBlock {
                     world.setBlockState(pos.down(), state);
                 }
 
-                world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
-                world.emitGameEvent(player, GameEvent.FLUID_PICKUP, pos);
-                ItemUsage.exchangeStack(itemStack, player, new ItemStack(EliesItems.olive_oil_jug));
+
             }
+
             return ActionResult.SUCCESS;
         }
         return ActionResult.FAIL;
