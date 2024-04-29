@@ -7,6 +7,8 @@ import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsage;
+import net.minecraft.item.Items;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -28,6 +30,7 @@ public class EmptyPressBlock extends AbstractPressBlock{
                 world.setBlockState(pos, state.with(HALF, DoubleBlockHalf.UPPER));
                 world.setBlockState(pos.down(), state);
             }
+            ItemUsage.exchangeStack(itemStack, player, new ItemStack(Items.AIR));
             return ActionResult.SUCCESS;
         }
         return ActionResult.FAIL;
